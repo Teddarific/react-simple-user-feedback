@@ -1,4 +1,4 @@
-# React-Lib-Starter
+# React Library Starter
 
 ##### A React Library starter pack
 
