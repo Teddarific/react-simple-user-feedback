@@ -1,8 +1,9 @@
 import React from 'react';
+import './index.scss';
 
 const ExampleComponent = (props) => {
   return (
-    <div> This is an example component! </div>
+    <div id="example"> This is an example component! </div>
   );
 };
 
