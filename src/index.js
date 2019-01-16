@@ -1,1 +1,1 @@
-export { ExampleComponent } from './ExampleComponent';
+export { BinaryFeedback } from './BinaryFeedback';
