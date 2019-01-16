@@ -2,6 +2,7 @@
 
 ##### A React Library starter pack
 
+![alt text](https://img.shields.io/github/license/teddarific/react-lib-starter.svg "MIT License")
 
 ## Getting Started
 
@@ -21,6 +22,8 @@ To run the library, ```yarn start```
 To build the library, ```yarn build```
 
 To build the docs, ```yarn build:docs```
+
+To publish your library, ```yarn publish``` or ```npm publish```
 
 ## Directory Structure
 
