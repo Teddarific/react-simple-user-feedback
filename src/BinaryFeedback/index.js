@@ -17,27 +17,33 @@ class BinaryFeedback extends Component {
       selected: 0,
     };
 
-    this.onClickPositive = this.onClickPositive.bind(this);
-    this.onClickNegative = this.onClickNegative.bind(this);
+    this.onPositiveClick = this.onPositiveClick.bind(this);
+    this.onNegativeClick = this.onNegativeClick.bind(this);
     this.renderPositiveContent = this.renderPositiveContent.bind(this);
     this.renderNegativeContent = this.renderNegativeContent.bind(this);
   }
 
-  onClickPositive() {
+  onPositiveClick() {
+    if (this.state.selected === 1) {
+      return;
+    }
     if (!this.props.singleSelect || this.state.selected === 0) {
       this.setState({
         selected: 1,
       });
-      this.props.onClickPositive();
+      this.props.onPositiveClick();
     }
   }
 
-  onClickNegative() {
+  onNegativeClick() {
+    if (this.state.selected === 2) {
+      return;
+    }
     if (!this.props.singleSelect || this.state.selected === 0) {
       this.setState({
         selected: 2,
       });
-      this.props.onClickNegative();
+      this.props.onNegativeClick();
     }
   }
 
@@ -79,10 +85,10 @@ class BinaryFeedback extends Component {
     return (
       <div className={genClassName('container')}>
         <div className={genClassName('actions')}>
-          <div className={positiveClass} onClick={this.onClickPositive} role="button" tabIndex={0}>
+          <div className={positiveClass} onClick={this.onPositiveClick} role="button" tabIndex={0}>
             {this.renderPositiveContent()}
           </div>
-          <div className={negativeClass} onClick={this.onClickNegative} role="button" tabIndex={0}>
+          <div className={negativeClass} onClick={this.onNegativeClick} role="button" tabIndex={0}>
             {this.renderNegativeContent()}
           </div>
         </div>

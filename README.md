@@ -5,7 +5,7 @@
 ## Resources
 
 * [Github](https://github.com/Teddarific/react-simple-feedback)
-* [Full Documentation and Examples](teddyni.com/react-simple-feedback)
+* [Demos / Examples](http://teddyni.com/react-simple-feedback)
 
 ## Installation
 
@@ -23,7 +23,7 @@ yarn add react-simple-feedback
 
 ## Usage
 
-See the following example live [here](teddyni.com/react-simple-feedback)
+See the following example live [here](http://teddyni.com/react-simple-feedback)
 
 ````js
 import React, { Component } from 'react';
@@ -36,25 +36,25 @@ class Example extends Component {
             negativeCount: 0
         }
     }
-    	
+
     onPositiveClick = () => {
         this.setState(prevState => {
             return { positiveCount: prevState.positiveCount + 1 }
         });
     }
-    	
+
     onNegativeClick = () => {
         this.setState(prevState => {
             return { negativeCount: prevState.negativeCount + 1 }
         });
     }
-    
+
     render(){
         return (
             <div>
                 <BinaryFeedback
-                	onPositiveClick={this.onPositiveClick}
-                	onNegativeClick={this.onNegativeClick}
+                    onPositiveClick={this.onPositiveClick}
+                    onNegativeClick={this.onNegativeClick}
                 />
             </div>
         );
