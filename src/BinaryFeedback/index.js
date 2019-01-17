@@ -9,16 +9,6 @@ const genClassName = (className) => {
   return `BinaryFeedback__${className}`;
 };
 
-/*
-Props:
-
-* singleSelect
-* onClickPositive
-* onClickNegative
-
-
-*/
-
 class BinaryFeedback extends Component {
   constructor(props) {
     super(props);
