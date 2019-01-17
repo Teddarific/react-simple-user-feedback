@@ -30,12 +30,12 @@ import React, { Component } from 'react';
 import { BinaryFeedback } from 'react-simple-feedback';
 
 class Example extends Component {
-	constructor(props){
-		this.state = {
-			positiveCount: 0,
-			negativeCount: 0
-		}
-	}
+    constructor(props){
+        this.state = {
+            positiveCount: 0,
+            negativeCount: 0
+        }
+    }
 	
 	onPositiveClick = () => {
 		this.setState(prevState => {
@@ -52,9 +52,9 @@ class Example extends Component {
 	render(){
 		return (
 			<div>
-				<BinaryFeedback
-					onPositiveClick={this.onPositiveClick}
-					onNegativeClick={this.onNegativeClick}
+    			<BinaryFeedback
+    				onPositiveClick={this.onPositiveClick}
+    				onNegativeClick={this.onNegativeClick}
 				/>
 			</div>
 		)
