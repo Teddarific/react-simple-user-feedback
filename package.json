@@ -4,9 +4,9 @@
   "description": "A React library for simple feedback components",
   "main": "./dist/lib/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/parcel docs/index.html",
+    "start": "./node_modules/.bin/parcel src/docs/index.html",
     "build": "./node_modules/.bin/webpack --mode=production",
-    "build:docs": "./node_modules/.bin/parcel build docs/index.js -d dist/docs/"
+    "build:docs": "./node_modules/.bin/parcel build src/docs/index.js -d docs/"
   },
   "author": "Teddy Ni",
   "license": "MIT",
@@ -24,6 +24,7 @@
     "@babel/preset-react": "^7.0.0-beta.42",
     "autoprefixer": "^9.4.5",
     "babel-core": "6",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.0-beta",
     "babel-plugin-inline-react-svg": "^1.0.1",
     "css-loader": "^2.1.0",
