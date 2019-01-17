@@ -34,7 +34,7 @@ $errorRed: #E06666;
   }
 }
 
-.BinaryFeedback__positive:hover {
+:not(.BinaryFeedback__disabled).BinaryFeedback__positive:hover {
   background-color: $successGreen;
 
   path {
@@ -52,7 +52,7 @@ $errorRed: #E06666;
   }
 }
 
-.BinaryFeedback__negative:hover {
+:not(.BinaryFeedback__disabled).BinaryFeedback__negative:hover {
   background-color: $errorRed;
 
   path {
@@ -60,12 +60,28 @@ $errorRed: #E06666;
   }
 }
 
-.BinaryFeedback__positive .BinaryFeedback__selected {
-  background-color: #5CB85C;
+.BinaryFeedback__positive.BinaryFeedback__selected {
+  background-color: $successGreen;
+
+  path {
+    fill: white;
+  }
 }
 
-.BinaryFeedback__negative .BinaryFeedback__selected{
-  background-color: #D9534F;
+.BinaryFeedback__negative.BinaryFeedback__selected{
+  background-color: $errorRed;
+
+  path {
+    fill: white;
+  }
+}
+
+.BinaryFeedback__disabled {
+  background-color: #efefef;
+
+  path {
+    fill: white;
+  }
 }
 
 .BinaryFeedback__icon {

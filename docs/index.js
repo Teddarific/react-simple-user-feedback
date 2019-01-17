@@ -4,7 +4,7 @@ import { BinaryFeedback } from '../src/BinaryFeedback';
 
 const App = () => (
   <div>
-    <BinaryFeedback />
+    <BinaryFeedback singleSelect />
   </div>
 );
 

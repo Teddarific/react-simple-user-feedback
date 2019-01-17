@@ -9,6 +9,16 @@ const genClassName = (className) => {
   return `BinaryFeedback__${className}`;
 };
 
+/*
+Props:
+
+* singleSelect
+* onClickPositive
+* onClickNegative
+
+
+*/
+
 class BinaryFeedback extends Component {
   constructor(props) {
     super(props);
@@ -45,8 +55,9 @@ class BinaryFeedback extends Component {
     if (this.props.positiveContent) {
       return this.props.positiveContent;
     }
+
     return (
-      <ThumbsUp className={genClassName('icon')} fill="red" />
+      <ThumbsUp className={genClassName('icon')} />
     );
   }
 
@@ -54,19 +65,34 @@ class BinaryFeedback extends Component {
     if (this.props.negativeContent) {
       return this.props.negativeContent;
     }
+
     return (
       <ThumbsDown className={genClassName('icon')} />
     );
   }
 
   render() {
+    let positiveClass = genClassName('positive');
+    let negativeClass = genClassName('negative');
+    if (this.state.selected === 1) {
+      positiveClass = `${positiveClass} ${genClassName('selected')}`;
+      if (this.props.singleSelect) {
+        negativeClass = `${negativeClass} ${genClassName('disabled')}`;
+      }
+    } else if (this.state.selected === 2) {
+      negativeClass = `${negativeClass} ${genClassName('selected')}`;
+      if (this.props.singleSelect) {
+        positiveClass = `${positiveClass} ${genClassName('disabled')}`;
+      }
+    }
+
     return (
       <div className={genClassName('container')}>
         <div className={genClassName('actions')}>
-          <div className={genClassName('positive')} onClick={this.onClickPositive} role="button" tabIndex={0}>
+          <div className={positiveClass} onClick={this.onClickPositive} role="button" tabIndex={0}>
             {this.renderPositiveContent()}
           </div>
-          <div className={genClassName('negative')} onClick={this.onClickNegative} role="button" tabIndex={0}>
+          <div className={negativeClass} onClick={this.onClickNegative} role="button" tabIndex={0}>
             {this.renderNegativeContent()}
           </div>
         </div>
