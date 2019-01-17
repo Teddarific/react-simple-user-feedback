@@ -36,29 +36,29 @@ class Example extends Component {
             negativeCount: 0
         }
     }
-	
-	onPositiveClick = () => {
-		this.setState(prevState => {
-			return { positiveCount: prevState.positiveCount + 1 }
-		});
-	}
-	
-	onNegativeClick = () => {
-		this.setState(prevState => {
-			return { negativeCount: prevState.negativeCount + 1 }
-		});
-	}
-
-	render(){
-		return (
-			<div>
-    			<BinaryFeedback
-    				onPositiveClick={this.onPositiveClick}
-    				onNegativeClick={this.onNegativeClick}
-				/>
-			</div>
-		)
-	}
+    	
+    onPositiveClick = () => {
+        this.setState(prevState => {
+            return { positiveCount: prevState.positiveCount + 1 }
+        });
+    }
+    	
+    onNegativeClick = () => {
+        this.setState(prevState => {
+            return { negativeCount: prevState.negativeCount + 1 }
+        });
+    }
+    
+    render(){
+        return (
+            <div>
+                <BinaryFeedback
+                	onPositiveClick={this.onPositiveClick}
+                	onNegativeClick={this.onNegativeClick}
+                />
+            </div>
+        );
+    }
 }
 
 ````
