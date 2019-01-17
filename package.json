@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
     "build": "./node_modules/.bin/webpack --mode=production",
-    "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/"
+    "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/ --public-url /react-simple-feedback/"
   },
   "author": "Teddy Ni",
   "license": "MIT",
