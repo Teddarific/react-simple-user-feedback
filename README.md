@@ -1,33 +1,33 @@
-# React Simple Feedback
+# React Simple User Feedback
 
 ##### The library that makes gathering user feedback simple
 
 ## Resources
 
-* [Github](https://github.com/Teddarific/react-simple-feedback)
-* [Demos / Examples](http://teddyni.com/react-simple-feedback)
+* [Github](https://github.com/Teddarific/react-simple-user-feedback)
+* [Demos / Examples](http://teddyni.com/react-simple-user-feedback)
 
 ## Installation
 
 To add to your React app,
 
 ```
-npm install react-simple-feedback
+npm install react-simple-user-feedback
 ```
 
 or with Yarn,
 
 ```
-yarn add react-simple-feedback
+yarn add react-simple-user-feedback
 ```
 
 ## Usage
 
-See the following example live [here](http://teddyni.com/react-simple-feedback)
+See the following example live [here](http://teddyni.com/react-simple-user-feedback)
 
 ````js
 import React, { Component } from 'react';
-import { BinaryFeedback } from 'react-simple-feedback';
+import { BinaryFeedback } from 'react-simple-user-feedback';
 
 class Example extends Component {
     constructor(props){

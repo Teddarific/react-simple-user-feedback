@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="doc-home">
       <div className="doc-title">
-      React Simple Feedback
+      React Simple User Feedback
       </div>
       <div className="doc-subtitle">
         <a href="https://github.com/Teddarific/react-simple-feedback" target="_blank" rel="noopener noreferrer"> Github Repository </a>
