@@ -1,6 +1,6 @@
 {
   "name": "react-simple-user-feedback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React library for simple user feedback components",
   "main": "./dist/lib/index.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "author": "Teddy Ni",
   "repository": "https://github.com/Teddarific/react-simple-user-feedback",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
