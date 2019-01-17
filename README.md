@@ -2,10 +2,14 @@
 
 ##### The library that makes gathering user feedback simple
 
+![NPM Version](https://img.shields.io/npm/v/react-simple-user-feedback.svg)
+![MIT License](https://img.shields.io/npm/l/react-simple-user-feedback.svg)
+
 ## Resources
 
 * [Github](https://github.com/Teddarific/react-simple-user-feedback)
-* [Demos / Examples](http://teddyni.com/react-simple-user-feedback)
+* [Full Documentation and Examples](http://teddyni.com/react-simple-user-feedback)
+* [NPM Page](https://www.npmjs.com/package/react-simple-user-feedback)
 
 ## Installation
 
@@ -36,19 +40,19 @@ class Example extends Component {
             negativeCount: 0
         }
     }
-
+    	
     onPositiveClick = () => {
         this.setState(prevState => {
             return { positiveCount: prevState.positiveCount + 1 }
         });
     }
-
+    	
     onNegativeClick = () => {
         this.setState(prevState => {
             return { negativeCount: prevState.negativeCount + 1 }
         });
     }
-
+    
     render(){
         return (
             <div>

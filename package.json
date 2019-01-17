@@ -1,6 +1,6 @@
 {
   "name": "react-simple-user-feedback",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A React library for simple user feedback components",
   "main": "./dist/lib/index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/ --public-url /react-simple-user-feedback/"
   },
   "author": "Teddy Ni",
+  "repository": "https://github.com/Teddarific/react-simple-user-feedback",
   "license": "MIT",
   "dependencies": {
     "react": "^16.2.0",
@@ -47,5 +48,14 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-node-externals": "^1.6.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "user",
+    "feedback",
+    "data",
+    "thumbs up",
+    "thumbs down",
+    "simple"
+  ]
 }
