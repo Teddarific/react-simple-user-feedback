@@ -13,8 +13,15 @@ class BinaryFeedback extends Component {
   constructor(props) {
     super(props);
 
+    let initialState = 0;
+    if (props.positive) {
+      initialState = 1;
+    } else if (props.negative) {
+      initialState = 2;
+    }
+
     this.state = {
-      selected: 0,
+      selected: initialState,
     };
 
     this.onPositiveClick = this.onPositiveClick.bind(this);

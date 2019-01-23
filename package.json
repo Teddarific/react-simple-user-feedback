@@ -1,6 +1,6 @@
 {
   "name": "react-simple-user-feedback",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A React library for simple user feedback components",
   "main": "./dist/lib/index.js",
   "scripts": {

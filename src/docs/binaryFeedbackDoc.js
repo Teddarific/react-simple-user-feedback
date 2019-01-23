@@ -33,6 +33,29 @@ const ex3 = `
 \`\`\`
 `;
 
+const ex4 = `
+\`\`\`js
+<BinaryFeedback
+  onPositiveClick={this.onPositiveClick}
+  onNegativeClick={this.onNegativeClick}
+  positive
+/>
+\`\`\`
+`;
+
+const ex5 = `
+\`\`\`js
+<BinaryFeedback
+  onPositiveClick={this.onPositiveClick}
+  onNegativeClick={this.onNegativeClick}
+  positiveContent={<span> Useful <span>}
+  negativeContent={<span> Not useful <span>}
+  singleSelect
+  negative
+/>
+\`\`\`
+`;
+
 class BinaryFeedbackDoc extends Component {
   constructor(props) {
     super(props);
@@ -93,6 +116,29 @@ class BinaryFeedbackDoc extends Component {
             onNegativeClick={this.onNegativeClick}
             positiveContent="Useful"
             negativeContent="Not useful"
+          />
+        </div>
+        <div className="example-container">
+          <div className="example-title"> Code: </div>
+          <ReactMarkdown source={ex4} />
+          <div className="example-title"> Result: </div>
+          <BinaryFeedback
+            onPositiveClick={this.onPositiveClick}
+            onNegativeClick={this.onNegativeClick}
+            positive
+          />
+        </div>
+        <div className="example-container">
+          <div className="example-title"> Code: </div>
+          <ReactMarkdown source={ex5} />
+          <div className="example-title"> Result: </div>
+          <BinaryFeedback
+            onPositiveClick={this.onPositiveClick}
+            onNegativeClick={this.onNegativeClick}
+            positiveContent={<span> Useful </span>}
+            negativeContent={<span> Not useful </span>}
+            singleSelect
+            negative
           />
         </div>
       </div>

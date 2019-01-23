@@ -40,19 +40,19 @@ class Example extends Component {
             negativeCount: 0
         }
     }
-    	
+
     onPositiveClick = () => {
         this.setState(prevState => {
             return { positiveCount: prevState.positiveCount + 1 }
         });
     }
-    	
+
     onNegativeClick = () => {
         this.setState(prevState => {
             return { negativeCount: prevState.negativeCount + 1 }
         });
     }
-    
+
     render(){
         return (
             <div>
@@ -82,6 +82,9 @@ This component takes the following props:
 | singleSelect | Boolean | `false` | When the user selects a response, disable the other button to disable potentially multiple responses. |
 | positiveContent | String, JSX | Thumbs Up SVG | Content that goes on the positive button |
 | negativeContent | String, JSX | Thumbs Down SVG | Content that goes on the negative button |
+| positive | boolean | false | Set the selected state to positive |
+| negative | boolean | false | Set the selected state to negative |
+
 
 
 ## Contributors
